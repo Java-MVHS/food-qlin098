@@ -7,7 +7,7 @@ public class FoodTester3
 {
 	public static void main(String[] args)
 	{
-		System.out.println("\n\n");
+		printNewLines();
 		Food3 food1 = new Food3("baked", "banana", "muffins", 50, 15);
 		food1.printForSale();
 		/* food1 is a food object, which requires three parameters as 
@@ -27,6 +27,11 @@ public class FoodTester3
 		DeepDishPizza3 deepDishPizza = new DeepDishPizza3("cheese");
 		deepDishPizza.printForSale();
 		// same as above, except it sends it into DeepDishPizza3.
+		printNewLines();
+	}
+
+	public void printNewLines()
+	{
 		System.out.println("\n\n");
 	}
 }
